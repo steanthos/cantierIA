@@ -1249,6 +1249,26 @@ footer {
   }
 }
 
+/* — SCROLL HINT — */
+.scroll-hint {
+  display: none;
+  justify-content: center;
+  margin-top: 32px;
+  color: var(--clay);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .scroll-hint {
+    display: flex;
+  }
+}
+
 /* — ANIMATIONS — */
 .fade-up {
   opacity: 0;
