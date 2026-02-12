@@ -18,12 +18,17 @@
   <nav id="nav">
     <div class="nav-inner">
       <a href="#" class="logo">Cantier<span>IA</span></a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="#problema">Problema</a>
         <a href="#come-funziona">Come funziona</a>
         <!-- <a href="#pricing">Prezzi</a> -->
         <a href="#waitlist" class="nav-cta">Lista d'attesa</a>
       </div>
+      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -209,89 +214,6 @@
     </div>
   </section>
 
-  <!-- COMPATIBILE CON -->
-  <!--
-  <section class="compat fade-up">
-    <div class="container">
-      <div class="compat-inner">
-        <p class="compat-title">Funziona col software che già usi</p>
-        <div class="compat-logos">
-          <div class="compat-item">
-            <span class="compat-name">PriMus</span>
-            <span class="compat-format">export .XPWE</span>
-          </div>
-          <div class="compat-sep">·</div>
-          <div class="compat-item">
-            <span class="compat-name">Excel</span>
-            <span class="compat-format">export .XLSX</span>
-          </div>
-          <div class="compat-sep">·</div>
-          <div class="compat-item">
-            <span class="compat-name">Blumatica</span>
-            <span class="compat-format">import CSV</span>
-          </div>
-          <div class="compat-sep">·</div>
-          <div class="compat-item">
-            <span class="compat-name">STR Vision</span>
-            <span class="compat-format">import XLSX</span>
-          </div>
-          <div class="compat-sep">·</div>
-          <div class="compat-item">
-            <span class="compat-name">myAEDES</span>
-            <span class="compat-format">import CSV</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
-
-  <!-- PRICING -->
-  <!--
-  <section class="pricing fade-up" id="pricing">
-    <div class="container">
-      <div class="section-label">Prezzi</div>
-      <h2>Paga solo quando ti serve.</h2>
-      <p>Due computi all'anno? Paghi €6. Trenta al mese? €39. Tu scegli.</p>
-      <div class="price-cards">
-        <div class="price-card">
-          <div class="price-name">Free</div>
-          <div class="price-amount">€0</div>
-          <div class="price-desc">Per provare con calma</div>
-          <ul class="price-list">
-            <li>3 estrazioni IA/ mese</li>
-            <li>1 prezziario regionale</li>
-            <li>Ricerca semantica illimitata</li>
-            <li>Export PDF con watermark</li>
-          </ul>
-        </div>
-        <div class="price-card featured">
-          <div class="price-name">Pro</div>
-          <div class="price-amount">€39 <span>/mese</span></div>
-          <div class="price-desc">Per chi fa computi ogni settimana</div>
-          <ul class="price-list">
-            <li>30 estrazioni IA/ mese</li>
-            <li>Tutti i prezziari regionali</li>
-            <li>Export XPWE, XLSX, PDF</li>
-            <li>Ricerca semantica illimitata</li>
-            <li>Suggerimenti voci mancanti</li>
-          </ul>
-        </div>
-        <div class="price-card">
-          <div class="price-name">A consumo</div>
-          <div class="price-amount">€3 <span>/estrazione</span></div>
-          <div class="price-desc">Per chi ne fa pochi all'anno</div>
-          <ul class="price-list">
-            <li>Nessun abbonamento</li>
-            <li>Tutti i prezziari regionali</li>
-            <li>Export XPWE, XLSX, PDF</li>
-            <li>Paghi solo quando usi</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
--->
   <!-- TRUST -->
   <section class="trust fade-up">
     <div class="container">
@@ -350,6 +272,27 @@
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      });
     });
 
     // Fade-up on scroll
