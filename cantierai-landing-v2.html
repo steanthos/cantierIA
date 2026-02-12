@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CantierIA — Computi metrici con intelligenza artificiale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stili.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Cantier<span>IA</span></a>
+      <div class="nav-links">
+        <a href="#problema">Problema</a>
+        <a href="#come-funziona">Come funziona</a>
+        <!-- <a href="#pricing">Prezzi</a> -->
+        <a href="#waitlist" class="nav-cta">Lista d'attesa</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-tag">Beta in arrivo — Estate 2026</div>
+          <h1>Il computo metrico<br>lo fa <em>l'AI.</em><br>In pochi minuti.</h1>
+          <p class="hero-sub">
+            Carica un capitolato. L'intelligenza artificiale estrae le voci,
+            le abbina al prezziario della tua regione e ti prepara il computo.
+            Tu verifichi, correggi e lo esporti.
+          </p>
+          <form class="hero-form" id="hero-form">
+            <input type="email" placeholder="La tua email" required aria-label="Email">
+            <button type="submit" class="btn-primary">Richiedi accesso alla beta</button>
+          </form>
+          <p class="hero-note">Gratis per i primi beta tester · Niente spam, promesso</p>
+        </div>
+        <div class="hero-visual">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <span>cantieria — elaborazione</span>
+            </div>
+            <div class="terminal-body">
+              <span class="cmd">$</span> upload <span class="file">capitolato_via_roma.pdf</span><br>
+              <span class="dim"> Analisi documento... 14 pagine</span><br>
+              <span class="dim"> Estrazione voci in corso...</span><br><br>
+              <span class="ok">✓</span> Trovate <span class="num">47 voci</span> di lavorazione<br>
+              <span class="ok">✓</span> Abbinate al <span class="file">Prezziario Lazio 2026</span><br>
+              <span class="ok">✓</span> Match automatico: <span class="num">89%</span> delle voci<br>
+              <span class="ok">✓</span> <span class="num">5 voci</span> richiedono revisione manuale<br><br>
+              <span class="accent">→</span> Computo generato: <span class="num">€ 127.450,00</span><br>
+              <span class="dim"> Tempo: 2 min 14 sec</span>
+            </div>
+          </div>
+          <div class="floating-card card-1">
+            <div class="card-label">Tempo risparmiato</div>
+            <div class="card-value">6h <span class="small">/ computo</span></div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-label">Precisione IA</div>
+            <div class="card-value">93%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problema fade-up" id="problema">
+    <div class="container">
+      <div class="section-label">Il problema</div>
+      <h2>Stai ancora facendo computi<br>come si faceva nel 2005.</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">&#9201;</div>
+          <h3>4-8 ore per ogni computo</h3>
+          <p>
+            Leggi il capitolato articolo per articolo. Cerchi la voce nel prezziario.
+            Copi le quantità a mano. Per ogni cantiere, ogni volta, da capo.
+          </p>
+          <span class="pain-stat">~6 ore a computo</span>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">&#128270;</div>
+          <h3>20.000 voci, una sola giusta</h3>
+          <p>
+            Il prezziario regionale ha ventimila voci scritte in burocratese.
+            Tu cerchi "pavimento gres bagno" e il software non trova niente.
+          </p>
+          <span class="pain-stat">20K+ voci per prezziario</span>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">&#9888;</div>
+          <h3>Un errore costa caro</h3>
+          <p>
+            Una voce dimenticata, una quantità sbagliata, un prezzo non aggiornato.
+            Su un lavoro da 100K, un errore del 10% sono diecimila euro.
+          </p>
+          <span class="pain-stat">10% = €10.000 persi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COME FUNZIONA -->
+  <section class="come-funziona fade-up" id="come-funziona">
+    <div class="container">
+      <div class="section-label">Come funziona</div>
+      <h2>Tre passaggi. Due minuti.</h2>
+      <p>Nessun corso da seguire. Nessun manuale da leggere. Funziona e basta.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Carica il documento</h3>
+          <p>Capitolato, descrizione lavori, preventivo da rifare — PDF, Word o testo libero. Trascinalo dentro.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>L'IA fa il lavoro pesante</h3>
+          <p>Identifica le lavorazioni, le abbina alle voci del prezziario della tua regione, calcola gli importi.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Tu controlli ed esporti</h3>
+          <p>Rivedi le voci, aggiusta le quantità, aggiungi quello che manca ed esporti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section class="demo fade-up" id="demo">
+    <div class="container">
+      <div class="section-label">Esempio reale</div>
+      <h2>Da capitolato a computo.</h2>
+      <p class="demo-sub">Ecco cosa succede quando carichi un documento. L'IA legge, interpreta e struttura.</p>
+      <div class="demo-split">
+        <div>
+          <div class="demo-col-label">Input — Capitolato</div>
+          <div class="demo-input">
+            "Art. 7 — Demolizione di tramezzi in laterizio forato,
+            spessore 8-12 cm, compreso trasporto a discarica autorizzata
+            del materiale di risulta. Art. 8 — Fornitura e posa in opera
+            di pavimento in gres porcellanato di prima scelta, formato
+            60×60 cm, PEI IV, posa a colla su massetto..."
+          </div>
+        </div>
+        <div class="demo-arrow">&#10230;</div>
+        <div>
+          <div class="demo-col-label">Output — Computo strutturato</div>
+          <div class="demo-output">
+            <span class="h">COMPUTO METRICO — Prezziario Lazio 2026</span>
+
+            <span class="v">02.B.01.003</span> Demolizione tramezzi
+            laterizio forato sp. 8-12cm
+            compreso trasporto a discarica
+            Unità: <span class="t">m³</span> Prezzo: <span class="p">€ 38,50</span>
+
+            <span class="v">12.C.03.007</span> Pavimento gres
+            porcellanato I scelta 60×60
+            PEI IV, posa a colla
+            Unità: <span class="t">m²</span> Prezzo: <span class="p">€ 42,80</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features fade-up" id="features">
+    <div class="container">
+      <div class="section-label">Funzionalità</div>
+      <h2>Fa una cosa sola.<br>La fa bene.</h2>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <h3>Estrazione IA da capitolato</h3>
+          <p>Carica un PDF e ottieni le voci di lavorazione estratte e pronte da revisionare. L'IA capisce il contesto,
+            non cerca solo parole chiave.</p>
+        </div>
+        <div class="feat-card">
+          <h3>Ricerca semantica prezziario</h3>
+          <p>Scrivi come parli: "pavimento gres bagno 60x60". L'IA trova la voce giusta anche quando la descrizione
+            ufficiale è completamente diversa.</p>
+        </div>
+        <div class="feat-card">
+          <h3>Export universale</h3>
+          <p>Il computo generato lo esporti nel formato che ti serve: XPWE per PriMus, XLSX per Excel e Blumatica, PDF
+            professionale per il committente.</p>
+        </div>
+        <div class="feat-card">
+          <h3>Voci mancanti suggerite</h3>
+          <p>"Per una ristrutturazione bagno di 8m² di solito servono anche queste 5 voci." L'IA impara dai computi
+            generati e ti aiuta a non dimenticare nulla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPATIBILE CON -->
+  <!--
+  <section class="compat fade-up">
+    <div class="container">
+      <div class="compat-inner">
+        <p class="compat-title">Funziona col software che già usi</p>
+        <div class="compat-logos">
+          <div class="compat-item">
+            <span class="compat-name">PriMus</span>
+            <span class="compat-format">export .XPWE</span>
+          </div>
+          <div class="compat-sep">·</div>
+          <div class="compat-item">
+            <span class="compat-name">Excel</span>
+            <span class="compat-format">export .XLSX</span>
+          </div>
+          <div class="compat-sep">·</div>
+          <div class="compat-item">
+            <span class="compat-name">Blumatica</span>
+            <span class="compat-format">import CSV</span>
+          </div>
+          <div class="compat-sep">·</div>
+          <div class="compat-item">
+            <span class="compat-name">STR Vision</span>
+            <span class="compat-format">import XLSX</span>
+          </div>
+          <div class="compat-sep">·</div>
+          <div class="compat-item">
+            <span class="compat-name">myAEDES</span>
+            <span class="compat-format">import CSV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- PRICING -->
+  <!--
+  <section class="pricing fade-up" id="pricing">
+    <div class="container">
+      <div class="section-label">Prezzi</div>
+      <h2>Paga solo quando ti serve.</h2>
+      <p>Due computi all'anno? Paghi €6. Trenta al mese? €39. Tu scegli.</p>
+      <div class="price-cards">
+        <div class="price-card">
+          <div class="price-name">Free</div>
+          <div class="price-amount">€0</div>
+          <div class="price-desc">Per provare con calma</div>
+          <ul class="price-list">
+            <li>3 estrazioni IA/ mese</li>
+            <li>1 prezziario regionale</li>
+            <li>Ricerca semantica illimitata</li>
+            <li>Export PDF con watermark</li>
+          </ul>
+        </div>
+        <div class="price-card featured">
+          <div class="price-name">Pro</div>
+          <div class="price-amount">€39 <span>/mese</span></div>
+          <div class="price-desc">Per chi fa computi ogni settimana</div>
+          <ul class="price-list">
+            <li>30 estrazioni IA/ mese</li>
+            <li>Tutti i prezziari regionali</li>
+            <li>Export XPWE, XLSX, PDF</li>
+            <li>Ricerca semantica illimitata</li>
+            <li>Suggerimenti voci mancanti</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <div class="price-name">A consumo</div>
+          <div class="price-amount">€3 <span>/estrazione</span></div>
+          <div class="price-desc">Per chi ne fa pochi all'anno</div>
+          <ul class="price-list">
+            <li>Nessun abbonamento</li>
+            <li>Tutti i prezziari regionali</li>
+            <li>Export XPWE, XLSX, PDF</li>
+            <li>Paghi solo quando usi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- TRUST -->
+  <section class="trust fade-up">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">&#128274;</div>
+          <h3>Dati al sicuro in EU</h3>
+          <p>Server europei. I tuoi documenti non addestrano nessun modello AI. Dati personali rimossi prima
+            dell'elaborazione.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">&#9889;</div>
+          <h3>Operativo in 2 minuti</h3>
+          <p>Niente installazione. Niente CD-ROM. Apri il browser, scegli la regione, carica un documento.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">&#128172;</div>
+          <h3>Supporto umano</h3>
+          <p>Rispondiamo noi, non un chatbot. Scrivici e ti aiutiamo a partire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINALE -->
+  <section class="cta-final fade-up" id="waitlist">
+    <div class="container">
+      <h2>Pronto a risparmiare <br>ore di lavoro?</h2>
+      <p>
+        Iscriviti alla lista d'attesa. I primi 200 iscritti
+        avranno accesso gratuito alla beta e uno sconto a vita sul piano Pro.
+      </p>
+      <form class="cta-form" id="cta-form">
+        <input type="email" placeholder="La tua email professionale" required aria-label="Email">
+        <button type="submit">Mi iscrivo</button>
+      </form>
+      <p class="cta-note">Zero spam. Solo aggiornamenti sul lancio.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Cantier<span>IA</span></div>
+        <div class="footer-links">
+          <a href="#">Contatti</a>
+        </div>
+        <div class="footer-copy">&copy; 2026 CantierIA</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Google Sheet endpoint — sostituisci con il tuo URL di deploy
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwIT8MuVogb6zZCCqSZHW5GXo5zPHR1DW0mUCNKbXd8J7tyzLwiXmi9wIevxjFLBCLG/exec';
+
+    // Form handling
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = form.querySelector('input[type="email"]');
+        const email = input.value;
+        if (email) {
+          const btn = form.querySelector('button');
+          const originalText = btn.textContent;
+          btn.disabled = true;
+          btn.textContent = 'Invio...';
+          fetch(SHEET_URL, {
+            method: 'POST',
+            body: JSON.stringify({ email }),
+          }).then(() => {
+            btn.textContent = 'Iscritto!';
+            btn.style.background = '#5a7a52';
+            input.value = '';
+          }).catch(() => {
+            btn.textContent = 'Errore, riprova';
+            btn.style.background = '#a04b2d';
+          }).finally(() => {
+            btn.disabled = false;
+            setTimeout(() => {
+              btn.textContent = originalText;
+              btn.style.background = '';
+            }, 2500);
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
