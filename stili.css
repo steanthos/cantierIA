@@ -1253,14 +1253,15 @@ footer {
 .scroll-hint {
   display: none;
   justify-content: center;
-  margin-top: 32px;
-  color: var(--clay);
+  margin-top: 40px;
+  color: var(--accent);
+  text-decoration: none;
   animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); opacity: 0.6; }
-  50% { transform: translateY(6px); opacity: 1; }
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(8px); opacity: 1; }
 }
 
 @media (max-width: 900px) {
