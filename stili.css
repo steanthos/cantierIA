@@ -181,6 +181,10 @@ nav.scrolled {
   position: relative;
 }
 
+.hero .container {
+  max-width: 1200px;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1185,99 +1189,4 @@ footer {
 
   .steps {
     grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .steps::before {
-    display: none;
-  }
-
-  .feat-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .price-cards {
-    grid-template-columns: 1fr;
-    max-width: 340px;
-  }
-
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .demo-split {
-    grid-template-columns: 1fr;
-  }
-
-  .demo-arrow {
-    transform: rotate(90deg);
-    padding: 10px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2em;
-  }
-
-  .hero-form,
-  .cta-form {
-    flex-direction: column;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
-
-  .trust-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .demo-input {
-    padding: 18px;
-  }
-
-  .problema h2,
-  .come-funziona h2,
-  .demo h2,
-  .features h2,
-  .pricing h2,
-  .cta-final h2 {
-    font-size: 1.8em;
-  }
-}
-
-/* — SCROLL HINT — */
-.scroll-hint {
-  display: none;
-  justify-content: center;
-  margin-top: 40px;
-  color: var(--accent);
-  text-decoration: none;
-  animation: bounce 2s ease-in-out infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); opacity: 0.7; }
-  50% { transform: translateY(8px); opacity: 1; }
-}
-
-@media (max-width: 900px) {
-  .scroll-hint {
-    display: flex;
-  }
-}
-
-/* — ANIMATIONS — */
-.fade-up {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    ga
